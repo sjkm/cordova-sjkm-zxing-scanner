@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-sjkm-zxing-scanner" version="1.0.0">
+	<name>cordova-sjkm-zxing-scanner</name>
+	<platform name="android">
+		<js-module name="ZxingScanner" src="www/index.js">
+			<clobbers target="cordova.plugins.ZxingScanner" />
+		</js-module>
+
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="ZxingScanner">
+				<param name="android-package" value="cordova.sjkm.zxingscanner.ZxingScanner" />
+				<param name="onload" value="true"/>
+			</feature>
+		</config-file>
+
+		<config-file parent="/*" target="AndroidManifest.xml" />
+
+		<source-file src="src/android/ZxingScanner.java" target-dir="src/cordova/sjkm/zxingscanner/" />
+		
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		</config-file>
+	
+		<framework src="com.google.zxing:core:3.2.1" />
+	</platform>
+</plugin>

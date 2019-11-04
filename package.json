@@ -1,0 +1,25 @@
+{
+  "name": "cordova-sjkm-zxing-scanner",
+  "version": "1.0.0",
+  "description": "Cordova plugin for zxing library",
+  "cordova": {
+    "id": "cordova-sjkm-zxing-scanner",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjkm/cordova-sjkm-zxing-scanner.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Sharon Moll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjkm/cordova-sjkm-zxing-scanner/issues"
+  },
+  "homepage": "https://github.com/sjkm/cordova-sjkm-zxing-scanner#readme"
+}
